@@ -7,7 +7,7 @@ import numpy as np
 
 from ...util.misc import NestedTensor
 # from timm.models.layers import DropPath, to_2tuple, trunc_normal_
-from src.models.util import DropPath, to_2tuple, trunc_normal_
+from fasterliveportrait.models.util import DropPath, to_2tuple, trunc_normal_
 
 
 

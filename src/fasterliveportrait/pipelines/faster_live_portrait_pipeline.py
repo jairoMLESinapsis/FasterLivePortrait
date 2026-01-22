@@ -19,7 +19,7 @@ from .. import models
 from ..utils.crop import crop_image, parse_bbox_from_landmark, crop_image_by_bbox, paste_back, paste_back_pytorch
 from ..utils.utils import resize_to_limit, prepare_paste_back, get_rotation_matrix, calc_lip_close_ratio, \
     calc_eye_close_ratio, transform_keypoint, concat_feat
-from src.utils import utils
+from fasterliveportrait.utils import utils
 
 
 class FasterLivePortraitPipeline:
@@ -75,8 +75,8 @@ class FasterLivePortraitPipeline:
             print("load Animal Model >>>")
             self.is_animal = True
             self.model_dict = {}
-            from src.utils.animal_landmark_runner import XPoseRunner
-            from src.utils.utils import make_abs_path
+            from fasterliveportrait.utils.animal_landmark_runner import XPoseRunner
+            from fasterliveportrait.utils.utils import make_abs_path
             checkpoint_dir = None
             for model_name in self.cfg.animal_models:
                 print(f"loading model: {model_name}")
