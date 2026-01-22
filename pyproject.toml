@@ -1,0 +1,31 @@
+[project]
+name = "fasterliveportrait"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = [
+    "colorama",
+    "ffmpeg-python",
+    "gradio",
+    "huggingface-hub",
+    "insightface",
+    "kokoro",
+    "mediapipe",
+    "misaki[ja,zh]",
+    "munch",
+    "numpy",
+    "omegaconf",
+    "onnx",
+    "onnxruntime",
+    "opencv-python",
+    "phonemizer",
+    "pycuda",
+    "scikit-image",
+    "soundfile",
+    "tokenizers",
+    "torch",
+    "torchgeometry",
+]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
