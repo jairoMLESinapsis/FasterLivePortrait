@@ -8,6 +8,7 @@ dependencies = [
     "gradio",
     "huggingface-hub",
     "insightface",
+    "tokenizers",
     "kokoro",
     "mediapipe",
     "misaki[ja,zh]",
@@ -21,7 +22,6 @@ dependencies = [
     "pycuda",
     "scikit-image",
     "soundfile",
-    "tokenizers",
     "torch",
     "torchgeometry",
 ]
