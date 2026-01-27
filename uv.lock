@@ -964,7 +964,7 @@ requires-dist = [
     { name = "opencv-python", specifier = ">=4.13.0.90" },
     { name = "phonemizer", specifier = ">=3.3.0" },
     { name = "pycuda", specifier = ">=2026.1" },
-    { name = "scikit-image", specifier = ">=0.25.2" },
+    { name = "scikit-image", specifier = ">=0.24.0" },
     { name = "soundfile", specifier = ">=0.13.1" },
     { name = "tokenizers", specifier = ">=0.22.2" },
     { name = "torch", specifier = ">=2.10.0" },
