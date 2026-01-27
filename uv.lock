@@ -952,7 +952,7 @@ dependencies = [
 requires-dist = [
     { name = "colorama", specifier = ">=0.4.6" },
     { name = "ffmpeg-python", specifier = ">=0.2.0" },
-    { name = "gradio", specifier = ">=5.23.0" },
+    { name = "gradio", specifier = "<=5.23.0" },
     { name = "huggingface-hub", specifier = ">=0.26.1" },
     { name = "insightface", specifier = ">=0.7.3" },
     { name = "kokoro", specifier = ">=0.9.4" },

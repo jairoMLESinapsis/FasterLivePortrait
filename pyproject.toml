@@ -5,7 +5,7 @@ requires-python = ">=3.10"
 dependencies = [
     "colorama>=0.4.6",
     "ffmpeg-python>=0.2.0",
-    "gradio>=5.23.0",
+    "gradio<=5.23.0",
     "huggingface-hub>=0.26.1",
     "insightface>=0.7.3",
     "kokoro>=0.9.4",
