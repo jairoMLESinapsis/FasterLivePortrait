@@ -13,7 +13,7 @@ from omegaconf import OmegaConf
 from pydantic import BaseModel, ConfigDict
 from tqdm import tqdm
 
-from sinapsis_fasterliveportrait.helpers.pipeline import FasterLivePortraitPipelineOverride
+from fasterliveportrait.interface.pipeline import FasterLivePortraitPipelineOverride
 
 
 class RunArgs(BaseModel):
