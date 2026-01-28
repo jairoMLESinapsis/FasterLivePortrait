@@ -56,7 +56,7 @@ class JoyVASAAudio2MotionPipelineOverride(JoyVASAAudio2MotionPipeline):
         audio_model_path = kwargs.get("audio_model_path", "")
         motion_template_path = kwargs.get("motion_template_path", "")
         model_data = torch.load(motion_model_path)
-        model_args = NullableArgs(model_data["args"])
+        model_args = NullableArgsOverride(model_data["args"])
         model = DitTalkingHead(
             motion_feat_dim=model_args.motion_feat_dim,
             n_motions=model_args.n_motions,
@@ -222,7 +222,7 @@ def run_with_pkl(
 def run_audio_driving(driving_audio: bytes, args: RunArgs) -> list[np.ndarray]:
     infer_cfg = OmegaConf.load(args.cfg)
 
-    joyvasa_pipe = JoyVASAAudio2MotionPipeline(
+    joyvasa_pipe = JoyVASAAudio2MotionPipelineOverride(
         motion_model_path=infer_cfg.joyvasa_models.motion_model_path,
         audio_model_path=infer_cfg.joyvasa_models.audio_model_path,
         motion_template_path=infer_cfg.joyvasa_models.motion_template_path,
